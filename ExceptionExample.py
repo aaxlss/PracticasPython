@@ -6,10 +6,10 @@ try:
 
     num1, num2 = input("Introduce dos numeros separados por comas:")
 
-except NameError:
+except NameError as ex:
 
-    print("No se ingresaron numeros.")
-    raise
+    print("Exception:", ex)
+
 
 except TypeError:
 
